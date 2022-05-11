@@ -1,11 +1,10 @@
 // exports table
 module.exports = (dbinfo, Sequelize) => {
     return dbinfo.define(
-        "avis",
-        {
+        "avis", {
             // field name
             idAvis: {
-                // set date type
+                // set data type
                 type: Sequelize.DataTypes.INTEGER,
                 // set primaryKey
                 primaryKey: true,
@@ -31,8 +30,7 @@ module.exports = (dbinfo, Sequelize) => {
                 // setting allowNull to false will add NOT NULL to the column, which means there will be an error if you don't add info in this column
                 allowNull: true
             }
-        },
-        {
+        }, {
             /**
              * ligne obligatoire, By default, Sequelize will add the attributes createdAt and updatedAt to your model, so that you know when the database entry went into the db, and when it was last updated.
              */
@@ -46,4 +44,3 @@ module.exports = (dbinfo, Sequelize) => {
         }
     );
 };
-

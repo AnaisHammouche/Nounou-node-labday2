@@ -78,13 +78,13 @@ db.garde = require('../models/garde')(dbinfo, Sequelize);
 // /**
 //  * There are four type of associations available in Sequelize
 //  *to
-//  * BelongsTo     :  associations are associations where the foreign key for the one--one relation exists on the source model.
-//  * HasOne        :  associations are associations where the foreign key for the one-to-one relation exists on the target model.
-//  * HasMany       :  associations are connecting one source with multiple targets.
+//  * BelongsTo     :  are associations where the foreign key for the one--one relation exists on the source model.
+//  * HasOne        :  are associations where the foreign key for the one-to-one relation exists on the target model.
+//  * HasMany       :  are connecting one source with multiple targets.
 //  *                  The targets however are again connected to exactly one specific source.
 //  * 
 //  *                  c'est lui qui crée les tables intermédiaires. Il faut les écrire dans les deux sens.
-//  * BelongsToMany :  associations are used to connect sources with multiple targets. Furthermore the targets can also have connections to multiple sources.
+//  * BelongsToMany :  are used to connect sources with multiple targets. Furthermore the targets can also have connections to multiple sources.
 //  *
 //  ************************************** Start Relation **********************************************
 //  ***********************************************************************************************
